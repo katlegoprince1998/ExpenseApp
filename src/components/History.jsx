@@ -24,7 +24,7 @@ const History = () => {
             } else {
               return (
                 <div key={transaction.id} className='flex justify-between w-60 shadow-2xl bg-red-600 p-2 rounded-md m-4'>
-                  <h4 className='text-mono font-bold text-gray-200'>{transaction.trans}</h4>
+                  <h4 className='text-mono font-bold text-gray-200'>{transaction.transname}</h4>
                   <h4 className='italic text-heading font-extrabold'>R<span>{transaction.amount}</span></h4>
                 </div>
               );
