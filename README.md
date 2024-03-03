@@ -8,5 +8,5 @@ Currently, two official plugins are available:
 - [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 # ExpenseApp
 
-<img src="https://images.app.goo.gl/bkuwg6tvZcVdoAkc7" alt="Expense Tracker">
+<img src="[https://images.app.goo.gl/bkuwg6tvZcVdoAkc7](https://cdn.aarp.net/content/dam/aarp/money/budgeting_savings/2022/12/1140-trim-expenses.jpg)https://cdn.aarp.net/content/dam/aarp/money/budgeting_savings/2022/12/1140-trim-expenses.jpg" alt="Expense Tracker">
 
