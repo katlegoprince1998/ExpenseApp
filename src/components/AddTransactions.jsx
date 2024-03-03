@@ -1,0 +1,27 @@
+import React from 'react'
+
+const AddTransactions = () => {
+  return (
+     <form className='mt-10 shadow-2xl p-2'>
+        <h1 className='text-heading justify-center flex text-mono font-bold'>Add Transaction</h1>
+        <div className='mt-10'>
+            <div className='grid m-5'>
+            <label className='text-gray-400 text-mono font-bold' htmlFor="transName">Trans name</label>
+            <input className='h-8 shadow-lg rounded-md bg-gray-700 text-heading' type="text" name="trans" id="transName"  />
+            </div>
+            <div className='grid m-5'>
+            <label  className='text-gray-400 text-mono font-bold' htmlFor="transType">Trans Type</label>
+            <input className='h-8 shadow-lg rounded-md bg-gray-700 text-heading' type="text" name="trans" id="transType"  />
+            </div>
+            <div className='grid m-5'> 
+            <label  className='text-gray-400 text-mono font-bold' htmlFor="transType">Amount</label>
+            <input className='h-8 shadow-lg rounded-md bg-gray-700 text-heading' type="text" name="trans" id="amount"  />
+            </div>
+            <button className='bg-heading px-4 py-1 shadow-2xl text-primary font-bold hover:bg-green-600 hover:text-heading rounded-md w-60 m-4'>Add Trans</button>
+        </div>
+        
+     </form>
+  )
+}
+
+export default AddTransactions
