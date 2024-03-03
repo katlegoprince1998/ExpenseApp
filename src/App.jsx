@@ -4,10 +4,11 @@ import Expenses from "./components/Expenses";
 import Header from "./components/Header";
 import Income from "./components/Income";
 import History from "./components/History";
+import { GlobalProvider } from "./constext/GlobalState";
 
 export default function App() {
   return (
-   <>
+   <GlobalProvider>
       <Header />
       <div className="bg-primary w-7/12 rounded-md py-5 shadow-2xl mt-8 ml-auto mr-auto">
           <div className="flex justify-around">
@@ -20,6 +21,6 @@ export default function App() {
             <History />
           </div>
       </div>
-   </>
+   </GlobalProvider>
   )
 }
