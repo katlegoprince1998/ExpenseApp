@@ -1,7 +1,9 @@
-import React, { useContext, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import { GlobalContext } from '../constext/GlobalState';
 import { database } from '../config/config';
-import { addDoc, collection } from 'firebase/firestore';
+import { addDoc, collection, getDoc} from 'firebase/firestore';
+
+
 const AddTransactions = () => {
     const [transType , setTransType] = useState("");
     const [transname, setTransName] = useState("");
@@ -10,13 +12,8 @@ const AddTransactions = () => {
     const value = collection(database, "expense-track");
 
     const handleForm = async(e) => {
-     
        e.preventDefault();
-     
-
        await addDoc(value, {transname:transname, transType:transType, amount:amount})
-
-      
     }
     
     return (
